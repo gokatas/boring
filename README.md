@@ -1,5 +1,3 @@
-LEVEL: beginner TOPICS: goroutines, channels, select
-
 Boring contains various Go concurrency patterns in the form of boring conversations. 
 
 Based on Go Concurrency Patterns by Rob Pike (2012):
