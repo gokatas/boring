@@ -1,5 +1,5 @@
-// Lockstep makes Ann and Joe talk in lockstep (one after another). You can use
-// channels as a handle on a service.
+// You can use channel as a handle on a service. Here we make Ann and Joe talk
+// in lockstep, i.e. one after another.
 package main
 
 import (

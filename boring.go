@@ -1,5 +1,5 @@
 /*
-Boring contains various Go concurrency patterns.
+Package boring contains basic Go concurrency patterns.
 
 It's based on a talk by Rob Pike (2012):
 

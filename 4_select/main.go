@@ -23,7 +23,7 @@ func main() {
 		case s := <-c:
 			fmt.Println(s)
 		case <-time.After(time.Millisecond * 600):
-			fmt.Println("bye bye")
+			fmt.Println("timeout")
 			return
 		}
 	}

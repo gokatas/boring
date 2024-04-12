@@ -1,3 +1,5 @@
+// Jack will quit talking when we let him now. He'll also let us know when he's
+// done quitting.
 package main
 
 import (

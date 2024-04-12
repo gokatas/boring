@@ -1,10 +1,10 @@
-// The main goroutine communicates with a goroutine started by Person.
+// The main goroutine communicates with a goroutine launched by Person via a
+// channel.
 package main
 
 import (
-	"fmt"
-
 	"boring"
+	"fmt"
 )
 
 func main() {
