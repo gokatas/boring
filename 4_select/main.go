@@ -6,7 +6,7 @@
 //   - If multiple can proceed, chooses (pseudo-)randomly.
 //   - A default case, if present, executes immediately if no channel is ready.
 //
-// Timeout the conversation when no one speaks for 600 ms.
+// Timeout when no one speaks for 600 ms.
 package main
 
 import (

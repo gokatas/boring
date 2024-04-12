@@ -9,7 +9,7 @@ import (
 
 func main() {
 	quit := make(chan bool)
-	c := boring.Quitter("quiter", quit)
+	c := boring.Quitter("Jack", quit)
 	for i := rand.Intn(10); i >= 0; i-- {
 		fmt.Println(<-c)
 	}

@@ -7,7 +7,7 @@ import (
 )
 
 func main() { // the main goroutine
-	c := boring.Person("blah")
+	c := boring.Person("Joe")
 	for i := 0; i < 5; i++ {
 		fmt.Println(<-c)
 	}
