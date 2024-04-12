@@ -3,12 +3,12 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
+
+	"boring"
 )
 
 func main() {
-	c := fanIn(say("Ann"), say("Joe"))
+	c := fanIn(boring.Person("Ann"), boring.Person("Joe"))
 	for i := 0; i < 10; i++ {
 		fmt.Println(<-c)
 	}
@@ -24,17 +24,6 @@ func fanIn(c1, c2 <-chan string) <-chan string {
 	go func() {
 		for {
 			c <- <-c2
-		}
-	}()
-	return c
-}
-
-func say(msg string) <-chan string {
-	c := make(chan string)
-	go func() {
-		for i := 0; ; i++ {
-			c <- fmt.Sprintf("%s, %d", msg, i)
-			time.Sleep(time.Millisecond * time.Duration(rand.Intn(1e3)))
 		}
 	}()
 	return c
