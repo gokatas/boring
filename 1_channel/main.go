@@ -1,3 +1,4 @@
+// The main goroutine communicates with a goroutine started by Person.
 package main
 
 import (
@@ -6,7 +7,7 @@ import (
 	"boring"
 )
 
-func main() { // the main goroutine
+func main() {
 	c := boring.Person("Joe")
 	for i := 0; i < 5; i++ {
 		fmt.Println(<-c)
