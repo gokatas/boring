@@ -1,5 +1,6 @@
-// The main goroutine communicates with a goroutine launched by Person via a
-// channel.
+// The main goroutine communicates with the goroutine launched by Person via a
+// channel. A channel allows for communication and synchronization between
+// goroutines.
 package main
 
 import (
@@ -9,7 +10,7 @@ import (
 
 func main() {
 	c := boring.Person("Joe")
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 10; i++ {
 		fmt.Println(<-c)
 	}
 }

@@ -1,4 +1,4 @@
-// Multiplex lets talk Ann or Joe (whosever is ready) using fanIn function.
+// Multiplex lets talk Ann *or* Joe (whosever is ready) using fanIn function.
 package main
 
 import (

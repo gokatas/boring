@@ -1,3 +1,5 @@
+// Select lets talk Ann or Joe (whosever is ready) until no one speaks for 600ms.
+//
 // Select statement is another way to handle multiple channels. It's like switch
 // but each case is a communication.
 //
@@ -5,8 +7,6 @@
 //   - Blocks until one communication can proceed.
 //   - If multiple can proceed, chooses (pseudo-)randomly.
 //   - A default case, if present, executes immediately if no channel is ready.
-//
-// Timeout when no one speaks for 600 ms.
 package main
 
 import (

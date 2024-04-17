@@ -17,9 +17,8 @@ import (
 
 const format = "%s: blah %d"
 
-// Person is a generator, i.e. a function that returns a channel. A channel
-// allows for communication and synchronization between goroutines. We launch
-// the goroutine from inside the generator.
+// Person is a (bullshit :-) generator, i.e. a function that returns a channel.
+// Person launches a goroutine that sends on the channel.
 func Person(name string) <-chan string {
 	c := make(chan string)
 	go func() {

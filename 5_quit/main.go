@@ -1,5 +1,5 @@
-// Jack will quit talking when we let him now. He'll also let us know when he's
-// done quitting.
+// Quit makes a boring person stop talking by sending on a channel. They will
+// let us know when they're done quitting via another channel.
 package main
 
 import (
