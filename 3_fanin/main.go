@@ -1,4 +1,5 @@
-// Multiplex lets talk Ann *or* Joe (whosever is ready) using fanIn function.
+// FanIn function combines (multiplexes) two channels into one,
+// letting talk Ann or Joe, whosever is ready.
 package main
 
 import (

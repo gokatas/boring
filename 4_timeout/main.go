@@ -1,4 +1,5 @@
-// Select lets talk Ann or Joe (whosever is ready) until no one speaks for 600ms.
+// We use select to let talk Ann or Joe (whosever is ready) until no one speaks
+// for 600ms.
 //
 // Select statement is another way to handle multiple channels. It's like switch
 // but each case is a communication.
