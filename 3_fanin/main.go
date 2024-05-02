@@ -5,7 +5,7 @@ package main
 import (
 	"fmt"
 
-	"boring"
+	"github.com/gokatas/boring"
 )
 
 func main() {

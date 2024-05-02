@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"time"
 
-	"boring"
+	"github.com/gokatas/boring"
 )
 
 func main() {

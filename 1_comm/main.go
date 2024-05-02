@@ -4,8 +4,9 @@
 package main
 
 import (
-	"boring"
 	"fmt"
+
+	"github.com/gokatas/boring"
 )
 
 func main() {

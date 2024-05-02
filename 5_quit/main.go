@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"time"
 
-	"boring"
+	"github.com/gokatas/boring"
 )
 
 func main() {
