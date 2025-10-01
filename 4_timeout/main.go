@@ -39,6 +39,9 @@ func fanIn(c1, c2 <-chan string) <-chan string {
 				c <- s
 			case s := <-c2:
 				c <- s
+				// Can be simplified to:
+				// case c <- <-c1:
+				// case c <- <-c2:
 			}
 		}
 	}()
